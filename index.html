@@ -21,6 +21,25 @@
                 <img src="assets/seta.svg" alt="">
                 <strong>Projeto</strong>
             </div>
+            <div class="form-step active">
+                <div class="content">
+                    <div class="input-wrapper">
+                        <label for="name">Nome :</label>
+                        <input type="text" id="name" name="name" placeholder="Digite seu nome" required>
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="phone">Telefone :</label>
+                        <input type="text" id="phone" name="phone" placeholder="Digite seu telefone" required onkeypress="return /\d/.test(event.key)">
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="e-mail">E-mail :</label>
+                        <input type="text" id="e-mail" name="e-mail" placeholder="Digite seu E-mail" required>
+                    </div>
+                </div>
+                <div class="button-wrapper">
+                    <button class="btn primary">CONTINUAR</button>
+                </div>
+            </div>
         </form>
     </main>
     <script src="index.js"></script>
