@@ -15,11 +15,11 @@
     <main id="app">
         <form>
             <div class="step-progress">
-                <strong class="active done">Contato</strong>
+                <strong class="active" data-step>Contato</strong>
                 <img src="assets/seta.svg" alt="">
-                <strong class="active">Empresa</strong>
+                <strong data-step>Empresa</strong>
                 <img src="assets/seta.svg" alt="">
-                <strong>Projeto</strong>
+                <strong data-step>Projeto</strong>
             </div>
             <div class="form-step active">
                 <div class="content">
@@ -37,9 +37,10 @@
                     </div>
                 </div>
                 <div class="button-wrapper justify-end">
-                    <button type="button" class="btn primary">CONTINUAR</button>
+                    <button type="button" class="btn primary" data-action="next">CONTINUAR</button>
                 </div>
             </div>
+
             <div class="form-step">
                 <div class="content">
                     <div class="input-wrapper">
@@ -56,10 +57,11 @@
                     </div>
                 </div>
                 <div class="button-wrapper">
-                    <button type="button" class="btn secondary">VOLTAR</button>
-                    <button type="button" class="btn primary">CONTINUAR</button>
+                    <button type="button" class="btn secondary" data-action="prev">VOLTAR</button>
+                    <button type="button" class="btn primary" data-action="next">CONTINUAR</button>
                 </div>
             </div>
+
             <div class="form-step">
                 <div class="content">
                     <div class="input-wrapper">
@@ -68,7 +70,7 @@
                     </div>
                 </div>
                 <div class="button-wrapper">
-                    <button type="button" class="btn secondary">VOLTAR</button>
+                    <button type="button" class="btn secondary" data-action="prev">VOLTAR</button>
                     <button class="btn primary" type="submit">ENVIAR</button>
                 </div>
             </div>

@@ -161,3 +161,7 @@ textarea::placeholder {
 .form-step.active {
     display: block;
 }
+
+@keyframes appear {
+    
+}
