@@ -29,9 +29,6 @@ form.addEventListener('click', (e) => {
 /*Envio do formulário */
 form.addEventListener('submit', (e) => {
     e.preventDefault()
-
-    const data = new FormData(form)
-    alert(`Obrigado ${data.get('name')}!`)
 })
 
 /*Update steps*/
@@ -65,3 +62,15 @@ function isValidInputs(){
     const formFields = [...currentFormStep.querySelectorAll('input'), ...currentFormStep.querySelectorAll('textarea')]
     return formFields.every((input) => input.reportValidity())
 }
+
+/*Animation*/
+formSteps.forEach(formStep => {
+    function addHide(){
+        formStep.classList.add('hide')
+    }
+
+    formStep.addEventListener('animationend', () => {
+        addHide()
+        formSteps[currentStep].classList.remove('hide')
+    })
+});
